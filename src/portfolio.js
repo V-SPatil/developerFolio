@@ -45,36 +45,50 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "QA Automation Engineer",
+  subTitle: "Automation Testing & Quality Engineering",
   skills: [
-    emoji(
-      "⚡ Developing scalable Selenium automation frameworks in Java"
-    ),
-    emoji("⚡ Building Playwright tests for E2E validation"),
-    emoji(
-      "⚡ API Testing using Postman and Rest Assured"
-    )
+    "⚡ Designing and developing robust automation frameworks using Selenium, Playwright, and Cypress.",
+    "⚡ Automating RESTful API testing with Postman and Rest Assured for reliable backend validation.",
+    "⚡ Integrating automated tests into CI/CD pipelines using Jenkins and GitLab CI for seamless delivery.",
+    "⚡ Conducting performance and load testing with JMeter and Locust to ensure system scalability.",
+    "⚡ Collaborating with cross-functional teams to establish quality processes and ensure bug-free releases.",
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
 softwareSkills: [
-  { 
-    skillName: "Selenium", 
-    fontAwesomeClassname: "simple-icons:selenium" 
+  {
+    skillName: "Selenium",
+    fontAwesomeClassname: "simple-icons:selenium",
+    style: { color: "#43B02A" },
   },
-  { 
-    skillName: "Playwright", 
-    fontAwesomeClassname: "simple-icons:playwright" 
+  {
+    skillName: "Playwright",
+    fontAwesomeClassname: "simple-icons:microsoft",
+    style: { color: "#5E5E5E" },
   },
-  { 
-    skillName: "Java", 
-    fontAwesomeClassname: "logos:java" 
+  {
+    skillName: "Java",
+    fontAwesomeClassname: "simple-icons:java",
+    style: {
+      color: "#007396", // Java's official color
+    }
   },
-  { 
-    skillName: "Postman", 
-    fontAwesomeClassname: "simple-icons:postman" 
+  {
+    skillName: "Rest Assured",
+    fontAwesomeClassname: "simple-icons:java",
+    style: { color: "#007396" },
+  },
+  {
+    skillName: "Jenkins",
+    fontAwesomeClassname: "simple-icons:jenkins",
+    style: { color: "#D24939" },
+  },
+  {
+    skillName: "Postman",
+    fontAwesomeClassname: "simple-icons:postman",
+    style: { color: "#FF6C37" },
   }
 ],
   display: true // Set false to hide this section, defaults to true
@@ -86,13 +100,16 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Pune University",
-      logo: require("./assets/images/harvardLogo.png"),
+      schoolName: "Savitribai Phule Pune University",
+      logo: require("./assets/images/Sppu_logo.png"),
       subHeader: "Master of Science in Computer Applications",
       duration: "September 2020 - April 2022",
       desc: "Participated in the research and published paper named 'Visualizing Security beyond Passwords' which focuses on different methods that can be used for storing passwords safely",
       descBullets: [
         "⚡ Studied core subjects like Data Structures, DBMS, Networking, etc.",
+        "⚡ Built mini-projects demonstrating the use of RESTful APIs and backend services.",
+        "⚡ Studied Computer Networks, focusing on OSI Model, TCP/IP, and network protocols.",
+        "⚡ Hands-on experience with version control systems like Git and GitHub."
       ]
     }
   ]
@@ -127,19 +144,26 @@ const workExperiences = {
     {
       role: "Test Software Engineer",
       company: "Cognizant",
-      companylogo: require("./assets/images/facebookLogo.png"),
+      companylogo: require("./assets/images/Logo_Cognizant.png"),
       date: "NOV 2020 – FEB 2023",
       desc: "Developed a modular automation framework that reduced test script development time by 30%, resulting in increase dproductivity.",
       descBullets: [
-        "Optimized automation frameworks by implementing code reviewsand best practices, which reduced maintenance efforts by 30%and allowed the team to focus on developing new features rather than troubleshooting existing issues."
+        "⚡ Designed and developed robust Selenium WebDriver frameworks using Java for end-to-end test automation of web applications.",
+        "⚡ Integrated API automation tests into CI/CD pipelines for early feedback on service stability.",
+        "⚡ Actively participated in Agile Scrum ceremonies (Sprint Planning, Daily Stand-ups, Retrospective)."
       ]
     },
     {
-      role: "Test Automation Engineer",
-      company: "TCS",
-      companylogo: require("./assets/images/quoraLogo.png"),
+      role: "Senior QA Automation Engineer",
+      company: "Tata Consultancy services",
+      companylogo: require("./assets/images/TCS_Logo.jfif"),
       date: "FEB 2023 – Jan 2025",
-      desc: " Designed, developed, and maintained automated test scripts using Selenium WebDriver with Java for web application testing."
+      desc: " Designed, developed, and maintained automated test scripts using Selenium WebDriver with Java for web application testing.",  
+      descBullets: [
+        "⚡ Built and maintained scalable automation frameworks (POM, Data-Driven, Hybrid) from scratch to enhance test coverage and efficiency.",
+        "⚡ Automated REST API testing using Rest Assured with JSON schema validation, assertions, and request chaining.",
+        "⚡ Logged and tracked defects in Jira/Confluence, collaborating with developers for faster resolution."
+      ]
     }
   ]
 };
@@ -149,40 +173,41 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Playwright Projects",
+  subtitle: "✅ Developed an end-to-end test automation framework using Playwright for modern web applications, ensuring fast, reliable cross-browser testing and seamless CI/CD integration.",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/Playwright_images.png"),
+      projectName: "SWAGLabs Playwright automation",
+      projectDesc: "✅ Designed and implemented an end-to-end automation testing framework for Swag Labs using Playwright and TypeScript/JavaScript. Automated key user flows such as login, product purchase, cart management, and checkout process. Incorporated best practices like page object model (POM) design, parallel execution, and cross-browser testing. The framework includes detailed reporting and seamless CI/CD integration, ensuring faster test cycles and high reliability in validating UI and functional workflows.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "Visit Code",
+          url: "https://github.com/V-SPatil/Playwright-Automation"
+          
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/API_Image.jfif"),
+      projectName: "API Automation and validations",
+      projectDesc: "✅ Developed an automated API testing suite for JSONPlaceholder endpoints using Rest Assured (or Playwright if applicable), validating CRUD operations with schema validations, status codes, and integrated reporting.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "Visit code",
+          url: "https://github.com/V-SPatil/Playwright-Automation/APItest.spec.js"
         }
       ]
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -196,7 +221,7 @@ const achievementSection = {
   achievementsCards: [
     {
       title: "Google Data Analyst certification",
-      image: require("./assets/images/codeInLogo.webp"),
+      image: require("./assets/images/Certificate_image.jfif"),
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
