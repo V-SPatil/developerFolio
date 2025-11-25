@@ -26,7 +26,7 @@ const greeting = {
     "A passionate QA Automation Engineer 🚀 having experience in designing robust test frameworks with Selenium, Playwright, and API Automation."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1dEml273rNN4exbn-g7JTbPSD0f8swdht/view?usp=drive_link", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1wvrohsQct_wDvDBLvPjjDLXIOamH8YPN/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -154,7 +154,7 @@ const workExperiences = {
       ]
     },
     {
-      role: "Senior QA Automation Engineer",
+      role: "QA Automation Engineer",
       company: "Tata Consultancy services",
       companylogo: require("./assets/images/TCS_Logo.jfif"),
       date: "FEB 2023 – Jan 2025",
@@ -163,6 +163,18 @@ const workExperiences = {
         "⚡ Built and maintained scalable automation frameworks (POM, Data-Driven, Hybrid) from scratch to enhance test coverage and efficiency.",
         "⚡ Automated REST API testing using Rest Assured with JSON schema validation, assertions, and request chaining.",
         "⚡ Logged and tracked defects in Jira/Confluence, collaborating with developers for faster resolution."
+      ]
+    },
+    {
+      role: "Sr .QA Automation Engineer",
+      company: "TekSystems",
+      companylogo: require("./assets/images/TCS_Logo.jfif"),
+      date: "FEB 2025 – NOV 2025",
+      desc: " Served as the primary Playwright (JS/TS) automation engineer at Teksystems, responsible for architecting and maintaining a scalable automation framework. I implemented POM, test tagging, parallel execution, retries, reporting, and API + UI combined validations. Played a key role in shifting the team from manual to automation-driven validation, improving speed and reliability of releases.",  
+      descBullets: [
+        "⚡ Architected a modular Playwright framework using TypeScript with a clean Page Object + Component Object Model structure for high reusability.",
+        "⚡ mplemented a config-driven architecture enabling environment selection, parallel workers, data injection, and dynamic test filtering.",
+        "⚡ Designed a shared utilities layer for logging, error handling, validations, and request interception."
       ]
     }
   ]
